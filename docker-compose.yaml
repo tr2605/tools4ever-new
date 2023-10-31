@@ -40,5 +40,3 @@ services:
       - mariadb
 volumes:
   dbdata:
-
-
