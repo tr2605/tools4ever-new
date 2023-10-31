@@ -7,6 +7,11 @@ CREATE TABLE tools (
     PRIMARY KEY (tool_id)
 );
 
+
+
+
+
+
 INSERT INTO tools (tool_name, tool_category, tool_price, tool_brand)
 VALUES
 ('Hammer', 'Handgereedschap', 14.99, 'Hultafors'),
@@ -29,3 +34,21 @@ VALUES
 ('Verfafbrander', 'Verfgereedschap', 39.99, 'Steinel'),
 ('Verfroller', 'Verfgereedschap', 9.99, 'Anza'),
 ('Plamuurmes', 'Verfgereedschap', 6.99, 'Goudhaantje');
+
+/*
+Onderstaande code gaan we ook gebruiken maar op een later moment
+CREATE TABLE categories (
+    category_id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    PRIMARY KEY (category_id)
+);
+
+INSERT INTO categories(name) VALUES 
+('Handgereedschap'),
+('Elektrisch gereedschap'),
+('Tegelgereedschap'),
+('Meetgereedschap'),
+('Kitgereedschap'),
+('Lijmgereedschap'),
+('Stofafzuiging'),
+('Verfgereedschap');
