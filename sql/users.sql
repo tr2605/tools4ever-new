@@ -22,7 +22,7 @@
 
 INSERT INTO `users` (`id`, `email`, `password`, `firstname`, `lastname`, `address`, `city`, `is_active`, `role` , `backgroundColor`, `font`) VALUES
 (1, 'admin@admin.com', 'password', 'Admin', NULL, NULL, NULL, 1, 'administrator'. 'white', 'times new roman'),
-(2, 'adriaan@adriaan.com', 'password', 'Adriaan', 'Adriaan', 'acrobaatstraat 5', 'Hilversum', 1, 'employee'. 'yellow', 'arial'),
+(2, 'adriaan@adriaan.com', 'password', 'Adriaan', 'Adriaan', 'acrobaatstraat 5', 'Hilversum', 1, 'employee', 'yellow', 'arial'),
 (3, 'bassie@bassie.com', 'password', 'Bassie', 'Bassie', 'clownstraat 1', 'Hilversum', 1, 'employee'. 'black', 'arial');
 
 --
