@@ -1,0 +1,9 @@
+body{
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    width: 148px;
+    display:inline-block;
+}
