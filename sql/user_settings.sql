@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `user_settings` (
   `user_id` int(11) NOT NULL,
   `backgroundColor` varchar(200) NOT NULL,
-  `theme` varchar(200) NOT NULL
+  `font` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
