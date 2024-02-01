@@ -43,6 +43,4 @@ require 'header.php';
                 Geen gebruiker gevonden
             <?php endif; ?>
 </main>
-</body>
-
-</html>
+<?php require 'footer.php' ?>

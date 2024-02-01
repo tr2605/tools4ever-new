@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require 'database.php';
 require 'header.php';
@@ -53,7 +54,4 @@ require 'header.php';
         </form>
     </div>
 </main>
-<script src="js/script.js"></script>
-</body>
-
-</html>
+<?php require 'footer.php' ?>

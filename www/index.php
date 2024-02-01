@@ -29,6 +29,4 @@ require 'header.php';
 
 </main>
 
-</body>
-
-</html>
+<?php require 'footer.php' ?>

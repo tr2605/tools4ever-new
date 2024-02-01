@@ -160,7 +160,7 @@ table tbody tr:nth-child(even) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%; /
+    width: 50%;
     margin: 10px;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     border: 1px solid black;
@@ -187,4 +187,32 @@ form label{
     width: 100px;
     text-align: left;
     display: inline-block;
+}
+
+.erd{
+    width: 300px;
+    height: 340px;
+   
+    background-color: #ffffffba;
+}
+
+.sql-statement {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border: 1px solid goldenrod;
+    position: fixed;
+    bottom: 15px;
+    left: 25px;
+    display: block;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+#highlight-table {
+    color: blue;
+    font-weight: bold;
 }

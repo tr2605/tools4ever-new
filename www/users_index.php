@@ -36,6 +36,4 @@ require 'header.php';
         </tbody>
     </table>
 </main>
-</body>
-
-</html>
+<?php require 'footer.php' ?>

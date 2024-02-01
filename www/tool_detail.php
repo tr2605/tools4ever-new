@@ -28,6 +28,4 @@ require 'header.php';
         <?php endif; ?>
     </div>
 </main>
-</body>
-
-</html>
+<?php require 'footer.php' ?>
