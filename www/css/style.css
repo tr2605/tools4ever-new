@@ -5,14 +5,17 @@ html, body{
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 240px;
+    height: 160px;
 }
 
 header {
     background-color: goldenrod;
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 header nav{
@@ -73,6 +76,7 @@ header nav ul li a:hover{
 }
 
 
+
 main{
     margin-top: 10px;
 }
@@ -96,6 +100,14 @@ main .container{
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     border: 1px solid black;
     padding: 5px;
+}
+
+.container .product img{
+    width: 100%;
+    height: 200px;  
+    object-fit: contain;
+
+
 }
 
 .container .product a{
@@ -215,4 +227,52 @@ form label{
 #highlight-table {
     color: blue;
     font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 170px;
+    /*  */
+}
+
+main .container{
+    width: 100%;
+}
+
+main .container form{
+    padding:20px;
+    box-shadow: 1px 1px 1px 1px goldenrod;
+    
+}
+
+main .container form div{
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding:20px;   
+    border:1px solid goldenrod;
+    width: 500px;
+}
+
+.card p{
+    font-size: 40px;
+}
+
+.card-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+        
 }

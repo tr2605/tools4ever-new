@@ -1,18 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+require 'header.php';
+?>
+<main>
 
-<body>
-    <form action="login-process.php" method="post">
-        <input type="text" name="email" placeholder="email">
-        <input type="password" name="password" placeholder="password">
-        <input type="submit" name="submit" value="submit">
-    </form>
-</body>
+    <h1>Login</h1>
+    <div class="container">
 
-</html>
+        <form action="login-process.php" method="post">
+            <div class="form-group">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Wachtwoord</label>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <button name="submit" class="btn btn-success">Inloggen</button>
+        </form>
+    </div>
+</main>
+<?php require 'footer.php';

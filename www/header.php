@@ -19,6 +19,7 @@
                 <li><a href="">Merken</a></li>
                 <li><a href="">Winkelmand</a></li>
                 <?php if (isset($_SESSION['user_id'])) : ?>
+                    <li><a href="dashboard.php">Dashboard</a></li>
                     <li class="dropdown">
                         <a href="">Gebruikers</a>
                         <div class="dropdown-content">

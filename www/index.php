@@ -16,7 +16,7 @@ require 'header.php';
         <!-- show products here -->
         <?php foreach ($tools as $tool) : ?>
             <div class="product">
-                <img src="<?php echo isset($tool['image']) ? 'images/' . $tool['image'] : 'https://placehold.co/200' ?>" alt="<?php echo $tool['tool_name'] ?>">
+                <img src="<?php echo isset($tool['tool_image']) ? 'images/' . $tool['tool_image'] : 'https://placehold.co/200' ?>" alt="<?php echo $tool['tool_name'] ?>">
                 <h3><?php echo $tool['tool_name'] ?></h3>
                 <p><?php echo $tool['tool_category'] ?></p>
                 <p>€ <?php echo $tool['tool_price'] ?></p>
