@@ -28,12 +28,23 @@ if (isset($_POST['submit'])) {
 
                     // echo "You are logged in";
                     header("Location: dashboard.php");
+                    exit;
                 } else {
-                    echo "Wrong password";
+                    include 'header.php';
+                    $_GET['message'] = 'wrongpassword';
+                    include 'login-message.php';
+                    include 'footer.php';
+                    exit;
                 }
             } else {
-                echo "User not found";
+                include 'header.php';
+                $_GET['message'] = 'usernotfound';
+                include 'login-message.php';
+                include 'footer.php';
+                exit;
             }
         }
     }
 }
+
+include 'footer.php';

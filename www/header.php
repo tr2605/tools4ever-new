@@ -12,7 +12,9 @@
 
 <body>
     <header>
-        <img src="images/Obuh.png" alt="Obuh">
+        <a href="index.php">
+            <img src="images/Obuh.png" alt="Obuh">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
@@ -31,7 +33,7 @@
                         <a href="">Gereedschap</a>
                         <div class="dropdown-content">
                             <a href="tool_index.php">Bekijken</a>
-                            <a href="#">Toevoegen</a>
+                            <a href="tool_create.php">Toevoegen</a>
                         </div>
                     </li>
                     <li><a href="logout.php" class="btn btn-danger">Uitloggen</a></li>
