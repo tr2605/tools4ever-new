@@ -1,15 +1,13 @@
 <?php
 
-//database connection   
-$dbhost = "mariadb";
-$dbuser = "root";
-$dbpass = "password";
+$servername = "mariadb";
+$username = "root";
+$password = "password";
 $dbname = "tools4ever";
 
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+} catch (PDOException $e){
+    echo "Error: ". $e->getMessage();
 }
-

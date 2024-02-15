@@ -30,9 +30,14 @@ $image = $_POST['image'];
 
 
 $sql = "INSERT INTO tools (tool_name, tool_category, tool_price, tool_brand, tool_image) VALUES ('$name', '$category', '$price', '$brand', '$image')";
-$result = mysqli_query($conn, $sql);
 
-if ($result) {
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':zoekterm', $zoekterm, PDO::PARAM_STR);
+$stmt->execute();
+
+$tools = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+if ($stmt) {
     header("Location: tool_index.php");
     exit;
 }
