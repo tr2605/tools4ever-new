@@ -37,5 +37,5 @@ $stmt->execute();
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($stmt->execute()) {
-    echo "Something went good";
+    echo "is edited fr gang type shi n things of that nature";
 }

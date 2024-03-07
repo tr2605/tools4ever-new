@@ -14,19 +14,30 @@ if ($_SESSION['role'] != 'admin') {
 
 require 'database.php';
 require 'header.php';
+$sql = "SELECT * FROM categories";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+$categories = $stmt->fetchAll(PDO::FETCH_ASSOC); // Fixed variable name
+
 ?>
 
 <main>
     <h1>Nieuw Gereedschap</h1>
     <div class="container">
-        <form action="tool_create_process.php" method="post">
+        <form action="tool_create_process.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="name">Naam:</label>
                 <input type="text" id="name" name="name">
             </div>
             <div>
                 <label for="category">Categorie:</label>
-                <input type="text" id="category" name="category">
+                <select type="text" id="category" name="category">
+                    <?php foreach ($categories as $categorie) : ?> <!-- Fixed variable name -->
+                        <option value="<?php echo $categorie['category_id']; ?>">
+                            <?php echo $categorie['name']; ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
             </div>
             <div>
                 <label for="price">Prijs:</label>
@@ -37,10 +48,10 @@ require 'header.php';
                 <input type="brand" id="brand" name="brand">
             </div>
             <div>
-                <label for="image">Afbeelding:</label>
-                <input type="text" id="image" name="image">
+                <label for="fileToUpload">Afbeelding:</label>
+                <input type="file" id="fileToUpload" name="fileToUpload">
             </div>
-            <button type="submit" class="btn btn-success">Toevoegen</button>
+            <button type="submit" name="submit" class="btn btn-success">Toevoegen</button>
         </form>
     </div>
 </main>
